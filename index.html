@@ -1,99 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ede7f6;
-    color: #333;
-}
-header {
-    background-color: #673ab7;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-nav {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 3px solid #673ab7;
-}
-nav a {
-    color: #673ab7;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-nav a:hover {
-    color: #9575cd;
-    text-decoration: underline;
-}
-.content-section {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #b39ddb;
-    border-radius: 8px;
-}
-#about {
-    border-left: 5px solid #673ab7;
-}
-.gallery {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 3px solid #673ab7;
-    border-radius: 10px;
-}
-figure {
-    text-align: center;
-    margin: 10px;
-}
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px solid #673ab7;
-    padding: 10px;
-    text-align: center;
-}
-th {
-    background-color: #673ab7;
-    color: white;
-}
-form {
-    width: 60%;
-    margin: 0 auto;
-}
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #b39ddb;
-    border-radius: 4px;
-}
-button {
-    background-color: #673ab7;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #4527a0;
-}
-footer {
-    background-color: #673ab7;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musanya - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Musanya's Website</h1>
+        <p>Purple Theme - My Personal Portfolio</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hello, I am Musanya! Welcome to my personal website. I love web development and this is my assignment project with purple theme.</p>
+        <table>
+            <tr><th>Hobby</th><th>Skill</th></tr>
+            <tr><td>Reading</td><td>HTML</td></tr>
+            <tr><td>Coding</td><td>CSS</td></tr>
+        </table>
+    </section>
+    <section id="gallery" class="content-section">
+        <h2>My Gallery</h2>
+        <div class="gallery">
+            <figure><img src="photo1.jpg" alt="Photo 1"><figcaption>My Photo 1</figcaption></figure>
+            <figure><img src="photo2.jpg" alt="Photo 2"><figcaption>My Photo 2</figcaption></figure>
+            <figure><img src="photo3.jpg" alt="Photo 3"><figcaption>My Photo 3</figcaption></figure>
+        </div>
+    </section>
+    <section id="media" class="content-section">
+        <h2>Media</h2>
+        <h3>My Video</h3>
+        <video width="320" height="240" controls><source src="intro.mp4" type="video/mp4"></video>
+        <h3>My Audio</h3>
+        <audio controls><source src="audio.mp3" type="audio/mpeg"></audio>
+    </section>
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <form><label>Name:</label><input type="text" required><br>
+        <label>Email:</label><input type="email" required><br>
+        <label>Message:</label><textarea required></textarea><br>
+        <button type="submit">Send</button></form>
+    </section>
+    <footer><p>&copy; 2026 Musanya Mwamba</p></footer>
+</body>
+</html>
